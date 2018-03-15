@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataLayer\Alumno.cs" />
+    <Compile Include="DataLayer\Docente.cs" />
+    <Compile Include="DataLayer\Persona.cs" />
+    <Compile Include="ViewLayer\CrearGrupo.xaml.cs">
+      <DependentUpon>CrearGrupo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLayer\PagePrincipalAlumno.xaml.cs">
+      <DependentUpon>PagePrincipalAlumno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLayer\PrincipalAlumno.xaml.cs">
+      <DependentUpon>PrincipalAlumno.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +79,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ViewLayer\CrearGrupo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewLayer\PagePrincipalAlumno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewLayer\PrincipalAlumno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -97,8 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BussinesLayer\" />
-    <Folder Include="DataLayer\" />
-    <Folder Include="ViewLayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
